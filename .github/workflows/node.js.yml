@@ -31,11 +31,11 @@ jobs:
       env:
         CI: true
     - name: Publish to Github Packages Registry
-      uses: cleandevcode/material-kit-react@master
+      uses: cleandevcode/material-kit-react@main
       with:
-          name: cleandevcode/material-kit-react/my-app
+          name: cleandevcode/material-kit-react/Dockerfile
           registry: docker.pkg.github.com
           username: ${{ secrets.CLEANDEVCODE }}
           password: ${{ secrets.cleandevcode }}
-          dockerfile: Dockerfile-prod
+          dockerfile: Dockerfile
           tags: latest
